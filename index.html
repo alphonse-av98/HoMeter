@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>誉メーター</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="meter-title">
+            <a>誉メーター</a>
+        </div>
+        <div id="meter"></div>
+        <div id="controller">
+            <input type="button" class="inc_dec_button btn--blue" id="+10" value="+10" onclick="modHome(10)">
+            <input type="button" class="inc_dec_button btn--blue" id="+5" value="+5" onclick="modHome(5)">
+            <input type="button" class="inc_dec_button btn--blue" id="+1" value="+1" onclick="modHome(1)">
+            <input type="button" class="reset_button btn--radius" id="reset" value="reset" onclick="resetHome()">
+            <input type="button" class="inc_dec_button btn--red" id="-1" value="-1" onclick="modHome(-1)">
+            <input type="button" class="inc_dec_button btn--red" id="-5" value="-5" onclick="modHome(-5)">
+            <input type="button" class="inc_dec_button btn--red" id="-10" value="-10" onclick="modHome(-10)">
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
